@@ -19,6 +19,7 @@ int main()
 
 //排序，使用降序排列
 template<class T>
+
 void findNumber(T A[],int length)
 {
     for(int j=1;j<length;++j)
