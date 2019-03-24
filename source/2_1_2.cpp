@@ -17,7 +17,7 @@ int main()
     return 0;
 }
 
-//排序，使用降序排列
+//排序，使用降序排列,
 template<class T>
 void findNumber(T A[],int length)
 {
