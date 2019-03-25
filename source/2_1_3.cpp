@@ -8,10 +8,10 @@ int findNumber(T A[],int length,T v);
 int main()
 {
     float A[10];
-    for(int i=0;i<10;++i)
-        A[i]=rand()/10.0;
     int length=sizeof(A)/sizeof(A[0]);
-    float v=A[8];
+    for(int i=0;i<length;++i)
+        A[i]=rand()/10.0;
+    float v=-1;
     findNumber(A,length,v)<0?cout<<"NIL":cout<<findNumber(A,length,v);  
     return 0;
 }
