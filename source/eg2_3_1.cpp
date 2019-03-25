@@ -16,7 +16,6 @@ int main()
     for(int i=0;i<length;++i)
         A[i]=rand()/10.0;
     merge_sort(A,0,length-1);
-
     for(int i=0;i<length;++i)
         cout<<A[i]<<" ";
     return 0;
