@@ -32,6 +32,6 @@
 *.app
 *.bin
 
-#vscode
+#Code
 *.ipch
 *.json
