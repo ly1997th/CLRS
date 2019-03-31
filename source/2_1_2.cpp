@@ -12,7 +12,7 @@ int main()
         A[i]=rand()/10.0;
     int length=sizeof(A)/sizeof(A[0]);
     insertion_sort(A,length);
-    for(int i=0;i<10;++i)
+    for(int i=0;i<length;++i)
         cout<<A[i]<<" ";
     return 0;
 }
