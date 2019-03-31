@@ -8,49 +8,18 @@ void merge_sort(T A[],int p,int r);
 template <class T>
 void merge(T A[],int p,int q,int r);
 
-template <class T>
-int TwoSum(T A[],T V,T re[],int length);
-
 int main()
 {
     //算法测试
-    int A[4]={1,3,2,4};
+    int A[10]={1,3,2,4};
     int length=sizeof(A)/sizeof(A[0]);
     for(int i=0;i<length;++i)
-        cout<<A[i]<<" ";
-    cout<<endl;
+        A[i]=rand();
     merge_sort(A,0,length-1);
-    int V=5;int re[length*2];
-    int num=TwoSum(A,V,re,length);
-    cout<<V<<":";
-    for(int i=1;i<=num;++i)
-    {
-        cout<<"<"<<re[(i-1)*2]<<","<<re[i*2-1]<<">"<<" ";
-    }
+    for(int i=0;i<length;++i)
+        cout<<A[i]<<" ";
+
     return 0;
-}
-
-
-template <class T>
-int TwoSum(T A[],T V,T re[],int length)
-{
-    if(A[0]>V) return 0;
-    int p=0;
-    for(int i=0;i<length-1;++i)
-    {
-        if(A[i]>V) break;
-        else
-        {
-            int j=i+1;
-            while(A[j]<=V&&j<length)
-            {
-                if(A[i]+A[j]==V) 
-                {re[p]=A[i];re[++p]=A[j];++p;}
-                ++j;
-            }
-        }        
-    }
-    return p/2;
 }
 
 //归并排序,递归排序
