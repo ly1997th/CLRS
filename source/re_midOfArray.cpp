@@ -37,8 +37,8 @@ T insertionSort(T A[],int length)
 
 int main()
 {
-    int mod1=5;int mod2=9;
-    int A[450000],t1[5],t2[9];
+    const int mod1=5,mod2=9;
+    int A[450000],t1[mod1],t2[mod2];
     int length=sizeof(A)/sizeof(A[0]);
     for(int i=0;i<length;++i)
         A[i]=rand();
